@@ -18,5 +18,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/prueba-ci-cd:${{ github.sha }}
-            ${{ secrets.DOCKER_USERNAME }}/prueba-ci-cd:latest
+            ${{ secrets.DOCKER_USERNAME }}/hola_mundo:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/hola_mundo:latest
