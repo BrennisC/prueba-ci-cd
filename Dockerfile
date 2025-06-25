@@ -1,3 +1,8 @@
-FROM nginx:1.19-alpine
+# Usa una imagen ligera de Nginx
+FROM nginx:alpine
 
-ADD index.html /usr/share/nginx/html
+# Copia tu HTML estático al directorio público de Nginx
+COPY . /usr/share/nginx/html
+
+# Expone el puerto 80
+EXPOSE 80
